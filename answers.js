@@ -56,3 +56,26 @@ window.ANSWERS = [];
  }};
  let id=1001;for(const [region,cats] of Object.entries(groups))for(const [category,names] of Object.entries(cats))for(const name of names)window.ANSWERS.push({id:id++,name,category,region});
 })();
+window.ANSWERS.push(
+ {id:2001,name:'Крейсер «Михаил Кутузов»',category:'ship',region:'russia'},
+ {id:2002,name:'Ледокол «Красин»',category:'ship',region:'russia'},
+ {id:2003,name:'Ледокол «Ленин»',category:'ship',region:'russia'},
+ {id:2004,name:'Дом городских учреждений в Петербурге',category:'civic',region:'russia'},
+ {id:2005,name:'Здание городской думы в Ростове-на-Дону',category:'civic',region:'russia'},
+ {id:2006,name:'Ратуша Выборга',category:'civic',region:'russia'},
+ {id:2007,name:'Памятник адмиралу Нахимову',category:'statue',region:'russia'},
+ {id:2008,name:'Памятник Петру I в Архангельске',category:'statue',region:'russia'},
+ {id:2009,name:'Памятник адмиралу Ушакову в Саранске',category:'statue',region:'russia'},
+ {id:2010,name:'Ратуша Копенгагена',category:'civic',region:'world'},
+ {id:2011,name:'Ратуша Стокгольма',category:'civic',region:'world'},
+ {id:2012,name:'Ратуша Гамбурга',category:'civic',region:'world'},
+ {id:2013,name:'Ветряные мельницы Заансе-Сханс',category:'windmill',region:'world'},
+ {id:2014,name:'Ветряные мельницы Консуэгры',category:'windmill',region:'world'},
+ {id:2015,name:'Старый город Котора',category:'cityscape',region:'world'},
+ {id:2016,name:'Старый город Будвы',category:'cityscape',region:'world'},
+ {id:2017,name:'Суэцкий канал',category:'canal',region:'world'},
+ {id:2018,name:'Кильский канал',category:'canal',region:'world'},
+ {id:2019,name:'Мемориал Джефферсона',category:'memorial',region:'world'},
+ {id:2020,name:'Мемориал Гранта',category:'memorial',region:'world'}
+);
+for(const answer of window.ANSWERS)if(answer.category==='urban')answer.category=/площад/i.test(answer.name)?'square':'civic';
