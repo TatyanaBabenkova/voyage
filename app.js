@@ -1,6 +1,6 @@
 (() => {
  'use strict';
- const app=document.getElementById('app'), dialog=document.getElementById('dialog'), KEY='places-journey-v2';
+ const app=document.getElementById('app'), dialog=document.getElementById('dialog');
  const names=['Знакомые силуэты','Новые горизонты','Любопытный взгляд','Тайные адреса','Настоящий знаток'];
  const byId=Object.fromEntries([...ANSWERS,...PLACES].map(p=>[Number(p.id),{...p,id:Number(p.id)}]));
  const places=PLACES.map(p=>byId[Number(p.id)]), options=Object.values(byId), esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -16,12 +16,10 @@
  const icon=(n,cls='')=>`<svg class="${cls}" viewBox="0 0 24 24" aria-hidden="true"><path d="${paths[n]||paths.pin}"/></svg>`;
  const shuffle=a=>{a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;};
  const empty=()=>({version:2,mode:'russia',games:{},discovered:[]});
- let store=empty(),view='home',albumPage=0,storageOK=true;
- function valid(g,mode){return g&&Array.isArray(g.route)&&g.route.length===(g.free?10:50)&&new Set(g.route).size===g.route.length&&g.route.every(id=>byId[id]?.region===mode)&&Number.isInteger(g.level)&&g.level>=0&&(g.free?g.level>=5:g.level<=5)&&(!g.free||(Number.isInteger(g.total)&&g.total>=50&&Array.isArray(g.seen)&&g.seen.every(id=>byId[id]?.region===mode)))&&Number.isInteger(g.index)&&g.index>=0&&g.index<10&&Number.isInteger(g.lives)&&g.lives>=0&&g.lives<=5&&['question','reveal','checkpoint','finished','gameover'].includes(g.phase)&&Array.isArray(g.choices)&&Array.isArray(g.wrong);}
- try{const s=JSON.parse(localStorage.getItem(KEY));if(s?.version===2){store=empty();store.mode=s.mode==='world'?'world':'russia';store.discovered=[...new Set((s.discovered||[]).filter(id=>byId[id]))];for(const mode of ['russia','world'])if(valid(s.games?.[mode],mode))store.games[mode]=s.games[mode];}else{
-   const old=JSON.parse(localStorage.getItem('poputchik-places-v1'));if(old?.version===1){store.discovered=(old.discovered||[]).map(Number).filter(id=>byId[id]);if(old.level>=0&&old.level<5&&old.index>=0&&old.index<10){store.games.russia={route:ROUTES.flat(),level:old.level,index:old.index,lives:old.lives,phase:old.phase,choices:[],wrong:[]};}}
- }}catch{storageOK=false;}
- const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(store));}catch{storageOK=false;}};
+ let store=empty(),view='home',albumPage=0;
+ // Each page visit starts fresh; navigation within the game keeps state in memory.
+ try{localStorage.removeItem('places-journey-v2');localStorage.removeItem('poputchik-places-v1');}catch{}
+ window.addEventListener('pageshow',event=>{if(event.persisted){store=empty();view='home';albumPage=0;warm.clear();if(dialog.open)dialog.close();render();}});
  const modeName=()=>store.mode==='russia'?'Россия':'Мир';
  const game=()=>store.games[store.mode];
  const current=()=>byId[game()?.route[(game().free?0:game().level*10)+game().index]];
@@ -30,12 +28,12 @@
    // Sample without replacement, then arrange five increasingly difficult stages.
    const selected=shuffle(pool).slice(0,50).sort((a,b)=>a.difficulty-b.difficulty);
    const route=[];for(let i=0;i<5;i++)route.push(...shuffle(selected.slice(i*10,i*10+10)).map(p=>p.id));
-   store.games[store.mode]={route,level:0,index:0,lives:5,phase:'question',choices:[],wrong:[]};save();
+   store.games[store.mode]={route,level:0,index:0,lives:5,phase:'question',choices:[],wrong:[]};
  }
  function extendJourney(){const g=game();if(!g.free){g.seen=[...g.route];g.total=50;g.free=true;g.level=5;}
   const pool=places.filter(p=>p.region===store.mode).map(p=>p.id);let unseen=shuffle(pool.filter(id=>!g.seen.includes(id)));const route=[];
   while(route.length<10){if(!unseen.length){g.seen=[];unseen=shuffle(pool.filter(id=>!route.includes(id)));}const id=unseen.pop();route.push(id);g.seen.push(id);}
-  Object.assign(g,{route,index:0,lives:5,choices:[],wrong:[],phase:'question',stageStart:g.total});save();
+  Object.assign(g,{route,index:0,lives:5,choices:[],wrong:[],phase:'question',stageStart:g.total});
  }
  function prepare(){const g=game(),p=current();if(g.choices.length===3&&new Set(g.choices).size===3&&g.choices.includes(p.id)&&g.choices.every(id=>byId[id]&&byId[id].category===p.category&&(id===p.id||(!(p.excludeIds||[]).includes(id)&&!(p.excludeAnswers||[]).includes(byId[id].name)))))return;
    const allowed=x=>x.name!==p.name&&!(p.excludeAnswers||[]).includes(x.name)&&!(p.excludeIds||[]).includes(x.id);
@@ -45,7 +43,7 @@
    const pool=['bridge','station','water','stairs'].includes(p.category)?[...shuffle([...local,...extras]),...shuffle(all.filter(x=>x.region!==store.mode))]:[...shuffle(local),...shuffle(extras),...shuffle(all.filter(x=>x.region!==store.mode))];
    const unique=pool.filter((p,i)=>pool.findIndex(x=>x.name===p.name)===i);
    if(unique.length<2)throw Error(`Не хватает похожих вариантов: ${p.category}`);
-   g.choices=shuffle([p.id,...unique.slice(0,2).map(x=>x.id)]);g.wrong=[];save();
+   g.choices=shuffle([p.id,...unique.slice(0,2).map(x=>x.id)]);g.wrong=[];
  }
  const button=(action,text,cls='btn',extra='')=>`<button class="${cls}" data-action="${action}" ${extra}>${text}</button>`;
  function header(){return `<header class="topbar"><div class="header-left">${view!=='home'?button('home',icon('home')+'<span>Главная</span>','nav-btn'):'<span class="edition">ИГРА В ПУТЕШЕСТВИЯ</span>'}</div><nav aria-label="Навигация">${view==='album'&&game()?button('play',icon('arrow')+'<span>К игре</span>','nav-btn'):''}${button('rules','<span>Как играть</span>','nav-btn')}${button('album',icon('album')+'<span>Альбом</span>'+(view==='home'?'':'<b class="count">'+store.discovered.length+'</b>'),'nav-btn')}${view==='game'?button('menu',icon('more'),'nav-btn game-menu','aria-label="Меню игры"'):''}</nav></header>`;}
@@ -58,33 +56,33 @@
  function summary(){const g=game(),lost=g.phase==='gameover',finished=g.phase==='finished';return `<main class="summary"><div class="summary-symbol">${icon(lost?'pin':'star')}</div><div class="eyebrow">${lost?'Можно попробовать снова':finished?'Первые 50 мест позади':'Этап пройден'}</div><h1>${lost?'Продолжим открывать?':finished?'А дальше — целый мир.':'Едем дальше?'}</h1><p>${lost?`На фотографии — ${esc(current().name)}. Попытки закончились, но открытия сохранились. Начните этот этап снова.`:finished?'Пять уровней пройдены. Теперь можно путешествовать без финиша: новые места, те же пять попыток на каждые десять вопросов.':g.free?'Следующие десять мест уже ждут. Попытки восстановлены.':`Дальше — «${names[g.level]}». Места станут менее узнаваемыми. У вас снова пять попыток.`}</p><div class="summary-stats"><div><b>${g.free?g.total:g.level*10}</b><span>мест пройдено</span></div><div><b>${store.discovered.filter(id=>byId[id].region===store.mode).length}</b><span>мест в альбоме</span></div></div><div class="summary-actions">${button(lost?'retry':finished?'endless':'continue',(lost?'Попробовать снова':finished?'Путешествовать дальше':'Продолжить')+icon('arrow'),'btn primary')}${button('album','Открыть альбом','btn secondary')}</div></main>`;}
  const pageSize=()=>innerWidth<600?4:innerHeight<550?4:8;
  function album(){const ids=store.discovered.filter(id=>byId[id].region===store.mode);const size=pageSize(),total=Math.max(1,Math.ceil(ids.length/size));albumPage=Math.min(albumPage,total-1);return `<main class="album-screen"><div class="album-heading"><div><div class="eyebrow">Коллекция впечатлений · ${modeName()}</div><h1>Альбом открытий</h1></div><span class="album-total">${ids.length} мест</span></div>${ids.length?`<div class="gallery">${ids.slice(albumPage*size,(albumPage+1)*size).map(id=>{const p=byId[id];return button('photo',`<div class="thumb"><img src="${src(id,'thumb')}" decoding="async" alt="${esc(p.name)}"></div><b>${esc(p.name)}</b><span>${esc(p.location)}</span>`,'gallery-card',`data-id="${id}"`);}).join('')}</div><div class="pagination">${button('album-prev',icon('back'),'btn secondary',albumPage===0?'disabled aria-label="Предыдущая страница"':'aria-label="Предыдущая страница"')}<span>${albumPage+1} / ${total}</span>${button('album-next',icon('arrow'),'btn secondary',albumPage===total-1?'disabled aria-label="Следующая страница"':'aria-label="Следующая страница"')}</div>`:`<div class="empty"><div class="summary-symbol">${icon('album')}</div><h2>Первая страница ждёт</h2><p>Угадайте место — сохраните впечатление.</p>${button('play','Отправиться в путь '+icon('arrow'),'btn primary')}</div>`}</main>`;}
- function render(focus=false){app.innerHTML=`<div class="app-shell ${view==='home'?'is-home':view==='game'?'is-game':''}">${header()}${view==='home'?home():view==='album'?album():game().phase==='question'?question():game().phase==='reveal'?reveal():summary()}<footer><span>Места знакомые <i>·</i> В своём ритме</span>${view==='game'?button('new','Новый маршрут','footer-btn'):button('rules','Правила игры','footer-btn')}</footer></div>${!storageOK?'<div class="save-note">Сохранение недоступно — прогресс останется до закрытия вкладки.</div>':''}`;fitPhotos();preloadNext();if(focus){const h=app.querySelector('h1');if(h){h.tabIndex=-1;h.focus({preventScroll:true});}}}
+ function render(focus=false){app.innerHTML=`<div class="app-shell ${view==='home'?'is-home':view==='game'?'is-game':''}">${header()}${view==='home'?home():view==='album'?album():game().phase==='question'?question():game().phase==='reveal'?reveal():summary()}<footer><span>Места знакомые <i>·</i> В своём ритме</span>${view==='game'?button('new','Новый маршрут','footer-btn'):button('rules','Правила игры','footer-btn')}</footer></div>`;fitPhotos();preloadNext();if(focus){const h=app.querySelector('h1');if(h){h.tabIndex=-1;h.focus({preventScroll:true});}}}
  function modal(content,cls=''){dialog.className=cls;dialog.innerHTML=`${button('close',icon('close'),'close', 'aria-label="Закрыть"')}${content}`;dialog.showModal();}
  function answer(id){const g=game();if(view!=='game'||g.phase!=='question'||!g.choices.includes(id)||g.wrong.includes(id))return;
-   const correct=id===current().id;if(correct){g.phase='reveal';if(!store.discovered.includes(id))store.discovered.push(id);}else{g.wrong.push(id);g.lives--;if(!g.lives)g.phase='gameover';}save();render(correct||!g.lives);document.getElementById('announcement').textContent=correct?'Верный ответ!':`Неверно. Осталось попыток: ${g.lives}.`;if(g.phase==='question')app.querySelector('.choice:not(:disabled)')?.focus({preventScroll:true});
+   const correct=id===current().id;if(correct){g.phase='reveal';if(!store.discovered.includes(id))store.discovered.push(id);}else{g.wrong.push(id);g.lives--;if(!g.lives)g.phase='gameover';}render(correct||!g.lives);document.getElementById('announcement').textContent=correct?'Верный ответ!':`Неверно. Осталось попыток: ${g.lives}.`;if(g.phase==='question')app.querySelector('.choice:not(:disabled)')?.focus({preventScroll:true});
  }
  function action(a,b){const g=game();if(a==='answer')return answer(Number(b.dataset.id));
   if(a==='close'){dialog.close();return;}
   if(a==='menu'){modal(`<h2 id="dialog-title">Меню путешествия</h2><div class="menu-actions">${button('rules','Как играть','btn secondary')}${button('new','Начать новый маршрут','btn secondary')}${button('close','Вернуться к игре','btn primary')}</div>`);return;}
-  if(a==='rules'){if(dialog.open)dialog.close();modal(`<h2 id="dialog-title">Ваше маленькое путешествие</h2><ul><li>Выберите Россию или мир. Сначала — пять уровней по десять вопросов. После 50 мест можно продолжить без ограничения длины маршрута. Новые места идут без повторов до конца коллекции, затем начинается новый круг.</li><li>Три ответа похожи по типу объекта. На каждом новом уровне места становятся менее известными.</li><li>У вас пять попыток на уровень. Ошибка забирает одну, верный ответ открывает историю места.</li><li>Нажмите на фотографию или значок лупы справа сверху, чтобы открыть снимок целиком.</li><li>Текущий маршрут и альбом сохраняются в этом браузере. У России и мира — отдельный прогресс.</li></ul><p>На клавиатуре отвечайте цифрами 1, 2, 3. Чтобы увеличить фото, выберите его клавишей Tab и нажмите Enter. Escape закрывает снимок.</p>${button('close','Отлично, поехали','btn primary')}`);return;}
+  if(a==='rules'){if(dialog.open)dialog.close();modal(`<h2 id="dialog-title">Ваше маленькое путешествие</h2><ul><li>Выберите Россию или мир. Сначала — пять уровней по десять вопросов. После 50 мест можно продолжить без ограничения длины маршрута. Новые места идут без повторов до конца коллекции, затем начинается новый круг.</li><li>На каждом новом уровне места становятся менее известными.</li><li>У вас пять попыток на уровень. Ошибка забирает одну, верный ответ открывает историю места.</li><li>Нажмите на фотографию или значок лупы справа сверху, чтобы открыть снимок целиком.</li><li>Маршрут и альбом доступны до обновления или закрытия страницы. При новом заходе путешествие начинается с чистого листа. У России и мира — отдельный прогресс в рамках текущего захода.</li></ul><p>На клавиатуре отвечайте цифрами 1, 2, 3. Чтобы увеличить фото, выберите его клавишей Tab и нажмите Enter. Escape закрывает снимок.</p>${button('close','Отлично, поехали','btn primary')}`);return;}
   if(a==='photo'){const p=byId[b.dataset.id];if(!p)return;const known=view==='album'||g?.phase==='reveal';modal(`<h2 id="dialog-title">${known?esc(p.name):'Рассмотрите детали'}</h2><div class="full-image"><img src="${src(p.id,'large')}" decoding="async" alt="${known?esc(p.name):'Фотография загадки'}"></div>${known?`<p><b>${esc(p.location)}</b> · ${esc(p.description)}</p>`:''}`,'full-photo');return;}
   if(a==='new'){if(dialog.open)dialog.close();if(g&&g.phase!=='finished'){modal(`<h2 id="dialog-title">Отправиться другим маршрутом?</h2><p>Текущая партия «${modeName()}» начнётся заново с новым набором мест. Альбом открытий сохранится.</p><div class="dialog-actions">${button('close','Остаться','btn secondary')}${button('confirm-new','Новый маршрут','btn primary')}</div>`);return;}newGame();view='game';}
   if(a==='confirm-new'){newGame();view='game';dialog.close();}
-  if(a==='mode'){store.mode=b.dataset.mode==='world'?'world':'russia';save();}
+  if(a==='mode'){store.mode=b.dataset.mode==='world'?'world':'russia';}
   if(a==='home')view='home';
   if(a==='album'){view='album';albumPage=0;}
   if(a==='album-prev')albumPage--;
   if(a==='album-next')albumPage++;
   if(a==='play'){if(!g)newGame();view='game';}
   if(a==='endless'&&g?.phase==='finished'){extendJourney();view='game';}
-  if(a==='continue'&&g?.phase==='checkpoint'){if(g.free)extendJourney();else{g.phase='question';save();}}
-  if(a==='retry'&&g?.phase==='gameover'){Object.assign(g,{index:0,lives:5,choices:[],wrong:[],phase:'question'});if(g.free)g.total=g.stageStart;save();}
-  if(a==='next'&&g?.phase==='reveal'){if(g.free)g.total++;g.index++;g.choices=[];g.wrong=[];g.phase='question';if(g.index===10){g.level++;g.index=0;g.lives=5;g.phase=!g.free&&g.level===5?'finished':'checkpoint';}save();}
+  if(a==='continue'&&g?.phase==='checkpoint'){if(g.free)extendJourney();else{g.phase='question';}}
+  if(a==='retry'&&g?.phase==='gameover'){Object.assign(g,{index:0,lives:5,choices:[],wrong:[],phase:'question'});if(g.free)g.total=g.stageStart;}
+  if(a==='next'&&g?.phase==='reveal'){if(g.free)g.total++;g.index++;g.choices=[];g.wrong=[];g.phase='question';if(g.index===10){g.level++;g.index=0;g.lives=5;g.phase=!g.free&&g.level===5?'finished':'checkpoint';}}
   render(!['mode','album-prev','album-next'].includes(a));
  }
  [app,dialog].forEach(el=>el.addEventListener('click',e=>{const b=e.target.closest('button[data-action]');if(b&&!b.disabled)action(b.dataset.action,b);}));
  function fitPhotos(){app.querySelectorAll('.photo-viewport>img').forEach(img=>{const fit=()=>{const r=img.parentElement.getBoundingClientRect();if(!img.naturalWidth||!r.height)return;const a=r.width/r.height,b=img.naturalWidth/img.naturalHeight;img.style.objectFit=byId[img.parentElement.dataset.photo]?.fit==='contain'||b<.9?'contain':'cover';img.parentElement.classList.add('loaded');};img.onerror=()=>{img.parentElement.classList.add('load-failed');img.parentElement.setAttribute('aria-label','Фото не загрузилось. Нажмите, чтобы открыть крупную версию');};if(img.complete)fit();else img.onload=fit;});}
  document.addEventListener('keydown',e=>{if(dialog.open)return;if(view==='game'&&game().phase==='question'&&['1','2','3'].includes(e.key)&&!e.ctrlKey&&!e.metaKey&&!e.altKey&&!e.repeat){e.preventDefault();answer(game().choices[Number(e.key)-1]);}});
  let resizeTimer;window.addEventListener('resize',()=>{fitPhotos();if(view==='album'){clearTimeout(resizeTimer);resizeTimer=setTimeout(()=>render(),120);}});
- save();render();
+ render();
 })();
