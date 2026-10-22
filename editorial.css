@@ -17,8 +17,8 @@ body{background:var(--paper);font-family:var(--font)}.app-shell{max-width:1680px
 .hero-copy h1{line-height:1.06}.photo-viewport:not(.loaded):before{content:'Загружаем фотографию…';position:absolute;inset:0;display:grid;place-items:center;font-size:14px;color:var(--muted)}.photo-viewport.load-failed:before{content:'Фото не загрузилось. Нажмите, чтобы открыть'}
 .game-menu svg{stroke-width:4;stroke-linecap:round}.menu-actions{display:grid;gap:14px}
 
-/* Sky and warm sunlight keep the photos on a bright, quiet backdrop. */
-body{background-color:#f5fafb;background-image:radial-gradient(ellipse at 100% 0%,#bce3f5 0,transparent 57%),radial-gradient(ellipse at 0% 100%,#ffe4ad 0,transparent 54%);background-attachment:fixed}
+/* A quiet sky-blue backdrop, from pale blue to a richer blue. */
+body{background-color:#edf7fc;background-image:linear-gradient(135deg,#edf7fc 0%,#d6edf9 55%,#b8def2 100%);background-attachment:fixed}
 .topbar{border-bottom-color:#b9ccd3}.progress-panel{border-color:#b9ccd3}
 /* An unanswered option never acquires a selection colour on hover or touch. */
 .choice:focus-visible{outline:3px solid #3159bc;outline-offset:4px}
