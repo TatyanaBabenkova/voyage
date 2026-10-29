@@ -17028,5 +17028,689 @@
         "sha256": "8b761ac84a6d4eb67e5e31456f94f298e8d1a559bcd5de85394214d82260eb75"
       }
     }
+  },
+  {
+    "id": "401",
+    "file": "401.jpg",
+    "name": "Рыбная деревня",
+    "location": "Калининград",
+    "source": "https://commons.wikimedia.org/wiki/File:Fishery_village_in_Kaliningrad_-_2024-06-11.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Fishery_village_in_Kaliningrad_-_2024-06-11.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Fishery_village_in_Kaliningrad_-_2024-06-11.jpg/1280px-Fishery_village_in_Kaliningrad_-_2024-06-11.jpg",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "author": "Александр Сигачёв",
+    "attribution_required": false,
+    "width": 1280,
+    "height": 719,
+    "sha256": "05114d880292bb74c9385ae062579e5bb1ff0f98d20b384682b316adbb6aee82",
+    "checked": "2026-10-29",
+    "region": "russia",
+    "original_folder": "Фото туристские маршруты",
+    "game_variants": {
+      "thumb": {
+        "file": "images/thumb/401.webp",
+        "bytes": 18242,
+        "sha256": "45da5d0053db228698593dab4d4a47277aee68ff6de35bae4a8b519708e8a6e0"
+      },
+      "play": {
+        "file": "images/play/401.webp",
+        "bytes": 126278,
+        "sha256": "a8dbd28e3ddf10473fbcd30b1f6d7401688fbe1be2c84a477833f245d6d0a14e"
+      },
+      "large": {
+        "file": "images/large/401.webp",
+        "bytes": 257322,
+        "sha256": "facbf3d9b7c5a37048c06701798e5a0378464e3a47e714e0cecc72762a82afaf"
+      }
+    },
+    "game_file": "images/play/401.webp",
+    "game_sha256": "a8dbd28e3ddf10473fbcd30b1f6d7401688fbe1be2c84a477833f245d6d0a14e"
+  },
+  {
+    "id": "402",
+    "file": "402.jpg",
+    "name": "Водонапорная башня Светлогорска",
+    "location": "Светлогорск",
+    "source": "https://commons.wikimedia.org/wiki/File:Rauschen_water_tower_2012_1.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Rauschen_water_tower_2012_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Rauschen_water_tower_2012_1.jpg/1280px-Rauschen_water_tower_2012_1.jpg",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "author": "Perituss",
+    "attribution_required": false,
+    "width": 1280,
+    "height": 945,
+    "sha256": "06fcd99127a7c1677451932105e67d9954299a3a32a5f6ad4adf6038a8486304",
+    "checked": "2026-10-29",
+    "region": "russia",
+    "original_folder": "Фото туристские маршруты",
+    "game_variants": {
+      "thumb": {
+        "file": "images/thumb/402.webp",
+        "bytes": 20076,
+        "sha256": "55909904dc20371e3a53ecaae29f5a1bb7d54751cbb264528fe59399b73fbe78"
+      },
+      "play": {
+        "file": "images/play/402.webp",
+        "bytes": 154108,
+        "sha256": "188b7e91fba3983d3005c25f5bac67eb431b830d7198fac3bf2622df2db331c2"
+      },
+      "large": {
+        "file": "images/large/402.webp",
+        "bytes": 311424,
+        "sha256": "e38bf3ae1f21849c357177417dc77d564be02524f084fd2ee6e1c8bfcceeab4b"
+      }
+    },
+    "game_file": "images/play/402.webp",
+    "game_sha256": "188b7e91fba3983d3005c25f5bac67eb431b830d7198fac3bf2622df2db331c2"
+  },
+  {
+    "id": "403",
+    "file": "403.jpg",
+    "name": "Танцующий лес",
+    "location": "Куршская коса",
+    "source": "https://commons.wikimedia.org/wiki/File:Dancing_Forest_on_the_Curonian_Spit_in_Kaliningrad_Oblast,_Russia._2025-07-25.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Dancing_Forest_on_the_Curonian_Spit_in_Kaliningrad_Oblast%2C_Russia._2025-07-25.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Dancing_Forest_on_the_Curonian_Spit_in_Kaliningrad_Oblast%2C_Russia._2025-07-25.jpg/1280px-Dancing_Forest_on_the_Curonian_Spit_in_Kaliningrad_Oblast%2C_Russia._2025-07-25.jpg",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "author": "Bestalex",
+    "attribution_required": false,
+    "width": 1280,
+    "height": 960,
+    "sha256": "bfa62eb192f8105deda98878a2d8f9e0f04d8f02b5935af11f9bf97e612ecf12",
+    "checked": "2026-10-29",
+    "region": "russia",
+    "original_folder": "Фото туристские маршруты",
+    "game_variants": {
+      "thumb": {
+        "file": "images/thumb/403.webp",
+        "bytes": 39520,
+        "sha256": "cb30aee17e00a9c3f1c6c388a14ac242193a1c6b8268c80a951ace71897df91a"
+      },
+      "play": {
+        "file": "images/play/403.webp",
+        "bytes": 322408,
+        "sha256": "5a86b613fab398fc41e980fcdac9c1a471d1dd52be30f583324b04e58e7cf952"
+      },
+      "large": {
+        "file": "images/large/403.webp",
+        "bytes": 635380,
+        "sha256": "f785041fd93638dc1668023da76dd30ea301b23b62ef2db416b022659deb4329"
+      }
+    },
+    "game_file": "images/play/403.webp",
+    "game_sha256": "5a86b613fab398fc41e980fcdac9c1a471d1dd52be30f583324b04e58e7cf952"
+  },
+  {
+    "id": "404",
+    "file": "404.jpg",
+    "name": "Дюна Эфа",
+    "location": "Куршская коса",
+    "source": "https://commons.wikimedia.org/wiki/File:Epha_berg_-_2024-06-04_-_p7.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Epha_berg_-_2024-06-04_-_p7.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Epha_berg_-_2024-06-04_-_p7.jpg/1280px-Epha_berg_-_2024-06-04_-_p7.jpg",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "author": "Александр Сигачёв",
+    "attribution_required": false,
+    "width": 1280,
+    "height": 719,
+    "sha256": "26ee3a1cfce1680a22d4fa06b5a6e9cb4b79e80020714f40aa285284c8491e15",
+    "checked": "2026-10-29",
+    "region": "russia",
+    "original_folder": "Фото туристские маршруты",
+    "game_variants": {
+      "thumb": {
+        "file": "images/thumb/404.webp",
+        "bytes": 15264,
+        "sha256": "e4560088862a1cf0ca0f6a3b1e75ccb40c72181ed3b93ffa2906ed7e7ca46a41"
+      },
+      "play": {
+        "file": "images/play/404.webp",
+        "bytes": 116530,
+        "sha256": "e0a6a325df479b3bf2515cf32d51c5cc9b852d928f7c5d84a5e393d8a3c62efe"
+      },
+      "large": {
+        "file": "images/large/404.webp",
+        "bytes": 236094,
+        "sha256": "1163aa669d997c1a8d84c6a72cfb605b428ee3599f8dd6cb2ccaf06e322e1632"
+      }
+    },
+    "game_file": "images/play/404.webp",
+    "game_sha256": "e0a6a325df479b3bf2515cf32d51c5cc9b852d928f7c5d84a5e393d8a3c62efe"
+  },
+  {
+    "id": "405",
+    "file": "405.jpg",
+    "name": "Курортный проспект Зеленоградска",
+    "location": "Зеленоградск",
+    "source": "https://commons.wikimedia.org/wiki/File:Kurortny_Prospekt,_Zelenogradsk_-_2024-06.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Kurortny_Prospekt%2C_Zelenogradsk_-_2024-06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Kurortny_Prospekt%2C_Zelenogradsk_-_2024-06.jpg/1280px-Kurortny_Prospekt%2C_Zelenogradsk_-_2024-06.jpg",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "author": "Александр Сигачёв",
+    "attribution_required": false,
+    "width": 1280,
+    "height": 719,
+    "sha256": "066e74e566bd5f5f42198a5cac01605269a5b8c9442dab313bdf79fac41d9c33",
+    "checked": "2026-10-29",
+    "region": "russia",
+    "original_folder": "Фото туристские маршруты",
+    "game_variants": {
+      "thumb": {
+        "file": "images/thumb/405.webp",
+        "bytes": 17258,
+        "sha256": "210b6ab0650327a8b005c161f01a708760f557ab21fb81731707d77472f02efb"
+      },
+      "play": {
+        "file": "images/play/405.webp",
+        "bytes": 107320,
+        "sha256": "45f47308f3ee64ab8a6d05a2e02f1e2f0e4ad96041545276fa27883de4b28907"
+      },
+      "large": {
+        "file": "images/large/405.webp",
+        "bytes": 212048,
+        "sha256": "002af30465db9a97d22363b62f82a855e715ee358f881fd713c3d9251b94feae"
+      }
+    },
+    "game_file": "images/play/405.webp",
+    "game_sha256": "45f47308f3ee64ab8a6d05a2e02f1e2f0e4ad96041545276fa27883de4b28907"
+  },
+  {
+    "id": "406",
+    "file": "406.jpg",
+    "name": "Сквер королевы Луизы",
+    "location": "Зеленоградск",
+    "source": "https://commons.wikimedia.org/wiki/File:Queen_Louise_Square_in_Zelenogradsk_-_2024-06_-_p1.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Queen_Louise_Square_in_Zelenogradsk_-_2024-06_-_p1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Queen_Louise_Square_in_Zelenogradsk_-_2024-06_-_p1.jpg/1280px-Queen_Louise_Square_in_Zelenogradsk_-_2024-06_-_p1.jpg",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "author": "Александр Сигачёв",
+    "attribution_required": false,
+    "width": 1280,
+    "height": 1707,
+    "sha256": "25ffd50ba5d967a228b533966d58e7cac0dbefde7515498275237f786f8733fa",
+    "checked": "2026-10-29",
+    "region": "russia",
+    "original_folder": "Фото туристские маршруты",
+    "game_variants": {
+      "thumb": {
+        "file": "images/thumb/406.webp",
+        "bytes": 18468,
+        "sha256": "163e3eec0f792e6e47a625ac755c49ff4dec1d86e59e377d164e5aaa15246ad5"
+      },
+      "play": {
+        "file": "images/play/406.webp",
+        "bytes": 121796,
+        "sha256": "4f0e83d2efd9dd36aebb1c0330ab76811a2d8f16fc25e460cff6e4c2c6456615"
+      },
+      "large": {
+        "file": "images/large/406.webp",
+        "bytes": 390974,
+        "sha256": "402fefb014f35a8a38f4bf97afb6137dab42cbbbb02f9936ee82e8200d2c1bf8"
+      }
+    },
+    "game_file": "images/play/406.webp",
+    "game_sha256": "4f0e83d2efd9dd36aebb1c0330ab76811a2d8f16fc25e460cff6e4c2c6456615"
+  },
+  {
+    "id": "407",
+    "file": "407.jpg",
+    "name": "Калининградский драматический театр",
+    "location": "Калининград",
+    "source": "https://commons.wikimedia.org/wiki/File:IMG_Kaliningrad_Drama_Theatre_-_2024-06-13_-_p7.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/IMG_Kaliningrad_Drama_Theatre_-_2024-06-13_-_p7.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/IMG_Kaliningrad_Drama_Theatre_-_2024-06-13_-_p7.jpg/1280px-IMG_Kaliningrad_Drama_Theatre_-_2024-06-13_-_p7.jpg",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "author": "Александр Сигачёв",
+    "attribution_required": false,
+    "width": 1280,
+    "height": 823,
+    "sha256": "ccaefa074080bd8df8ef2deec44baaefc5125bb05b74a32942dc57711e5f2482",
+    "checked": "2026-10-29",
+    "region": "russia",
+    "original_folder": "Фото туристские маршруты",
+    "game_variants": {
+      "thumb": {
+        "file": "images/thumb/407.webp",
+        "bytes": 15824,
+        "sha256": "0a69a43bc6c5351cadb56307dabb41a4800656cabeb5c353f9eeb9bfaea53f12"
+      },
+      "play": {
+        "file": "images/play/407.webp",
+        "bytes": 86924,
+        "sha256": "32d94610547e56a56843b299cc3cf2be86115a80a7bdfb391c73d73413bbb5fe"
+      },
+      "large": {
+        "file": "images/large/407.webp",
+        "bytes": 169774,
+        "sha256": "f29e76e63cb0a639755facdc4e5a91f49a84a879db51c725430786523355a833"
+      }
+    },
+    "game_file": "images/play/407.webp",
+    "game_sha256": "32d94610547e56a56843b299cc3cf2be86115a80a7bdfb391c73d73413bbb5fe"
+  },
+  {
+    "id": "408",
+    "file": "408.jpg",
+    "name": "Променад Светлогорска",
+    "location": "Светлогорск",
+    "source": "https://commons.wikimedia.org/wiki/File:Svetlogorsk_promenade_2021-08.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Svetlogorsk_promenade_2021-08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Svetlogorsk_promenade_2021-08.jpg/1280px-Svetlogorsk_promenade_2021-08.jpg",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "author": "Svetlov Artem",
+    "attribution_required": false,
+    "width": 1280,
+    "height": 849,
+    "sha256": "06a936d09698cb1cf103fb6e6dfe0bccf449d7eaf447332bf808f0aa3acfe42e",
+    "checked": "2026-10-29",
+    "region": "russia",
+    "original_folder": "Фото туристские маршруты",
+    "game_variants": {
+      "thumb": {
+        "file": "images/thumb/408.webp",
+        "bytes": 13220,
+        "sha256": "bbbd842ca61b8faedc363bedf8a199467b0f7f2cc90a5ee8ef08d742404b43ec"
+      },
+      "play": {
+        "file": "images/play/408.webp",
+        "bytes": 87796,
+        "sha256": "6c9f7e01edaf9d674ff2828abee8f67ccade3d78d6c2623e985760d4f90c0c60"
+      },
+      "large": {
+        "file": "images/large/408.webp",
+        "bytes": 193592,
+        "sha256": "0af1f72c063760e3830f0dbce49c474c00a186ffdc0e08be3a0f9b826cbf83ea"
+      }
+    },
+    "game_file": "images/play/408.webp",
+    "game_sha256": "6c9f7e01edaf9d674ff2828abee8f67ccade3d78d6c2623e985760d4f90c0c60"
+  },
+  {
+    "id": "409",
+    "file": "409.jpg",
+    "name": "Набережная Зеленоградска",
+    "location": "Зеленоградск",
+    "source": "https://commons.wikimedia.org/wiki/File:Zelenogradsk_Seaside_(243157991).jpeg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Zelenogradsk_Seaside_%28243157991%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Zelenogradsk_Seaside_%28243157991%29.jpeg/1280px-Zelenogradsk_Seaside_%28243157991%29.jpeg",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "author": "Vladimir Zhdanov",
+    "attribution_required": false,
+    "width": 1280,
+    "height": 720,
+    "sha256": "9f7178c559e55f3a368e1c7f76a99c775a8623fc7c749c5b50c58d7f0ee4e685",
+    "checked": "2026-10-29",
+    "region": "russia",
+    "original_folder": "Фото туристские маршруты",
+    "game_variants": {
+      "thumb": {
+        "file": "images/thumb/409.webp",
+        "bytes": 12880,
+        "sha256": "882887f24dafc44857e212778318915c57eb73b4ea03eebed2ab842ed3d932cb"
+      },
+      "play": {
+        "file": "images/play/409.webp",
+        "bytes": 98628,
+        "sha256": "c10e94745677c6597e807f116213f2688495d0fad7e66ba77226b3c0270509eb"
+      },
+      "large": {
+        "file": "images/large/409.webp",
+        "bytes": 206444,
+        "sha256": "e3aed3f7f1752dc63344666a3589ebf13836784cd17ca447d751f89f96338f1d"
+      }
+    },
+    "game_file": "images/play/409.webp",
+    "game_sha256": "c10e94745677c6597e807f116213f2688495d0fad7e66ba77226b3c0270509eb"
+  },
+  {
+    "id": "410",
+    "file": "410.jpg",
+    "name": "Ротонда Онежской набережной",
+    "location": "Петрозаводск",
+    "source": "https://commons.wikimedia.org/wiki/File:Embankment_Onezhskaya_2019.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/04/Embankment_Onezhskaya_2019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Embankment_Onezhskaya_2019.jpg/1280px-Embankment_Onezhskaya_2019.jpg",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "author": "Semenov.m7",
+    "attribution_required": false,
+    "width": 1280,
+    "height": 999,
+    "sha256": "7376f56d79de6ff958a9365af8d5e14b355979157dddfe793db7271cc323edba",
+    "checked": "2026-10-29",
+    "region": "russia",
+    "original_folder": "Фото туристские маршруты",
+    "game_variants": {
+      "thumb": {
+        "file": "images/thumb/410.webp",
+        "bytes": 5634,
+        "sha256": "5d624de5ed3d4aa0426a662759ba39d1fae3067117308166797ffe510c7d25de"
+      },
+      "play": {
+        "file": "images/play/410.webp",
+        "bytes": 28796,
+        "sha256": "57fdc2f48970127c5878d6b0dd4c32d8c7ca9054d0330d0d29814521e074da98"
+      },
+      "large": {
+        "file": "images/large/410.webp",
+        "bytes": 91772,
+        "sha256": "56726b1b109e60a7890e437526f344a6c7ac06b47a4b28c10bf5f9facc85b6a4"
+      }
+    },
+    "game_file": "images/play/410.webp",
+    "game_sha256": "57fdc2f48970127c5878d6b0dd4c32d8c7ca9054d0330d0d29814521e074da98"
+  },
+  {
+    "id": "411",
+    "file": "411.jpg",
+    "name": "Вокзал Петрозаводска",
+    "location": "Петрозаводск",
+    "source": "https://commons.wikimedia.org/wiki/File:3091178_original.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/02/3091178_original.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/0/02/3091178_original.jpg",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "author": "SemyonDudenkov",
+    "attribution_required": false,
+    "width": 1034,
+    "height": 689,
+    "sha256": "cfbfafe5ef1c00bd3f2b297879ce5955d93e10a79cedc35400839ac75e213998",
+    "checked": "2026-10-29",
+    "region": "russia",
+    "original_folder": "Фото туристские маршруты",
+    "game_variants": {
+      "thumb": {
+        "file": "images/thumb/411.webp",
+        "bytes": 11200,
+        "sha256": "456814513a41d0b9dd6db584f0b929c51172817d9a5f2f1534f74a731a82a51f"
+      },
+      "play": {
+        "file": "images/play/411.webp",
+        "bytes": 58388,
+        "sha256": "d6160796de94d021e3c2decc0562357e08e12cf447aeb2888dceb70d815c7d22"
+      },
+      "large": {
+        "file": "images/large/411.webp",
+        "bytes": 80948,
+        "sha256": "a04644ccdaeacf8b39c9454dc4055c073ee2b246d62b0f99e44c6ddc3c52c8cc"
+      }
+    },
+    "game_file": "images/play/411.webp",
+    "game_sha256": "d6160796de94d021e3c2decc0562357e08e12cf447aeb2888dceb70d815c7d22"
+  },
+  {
+    "id": "412",
+    "file": "412.jpg",
+    "name": "Дом Кантеле",
+    "location": "Петрозаводск",
+    "source": "https://commons.wikimedia.org/wiki/File:%D0%90%D0%BD%D1%81%D0%B0%D0%BC%D0%B1%D0%BB%D1%8C_%22%D0%9A%D0%B0%D0%BD%D1%82%D0%B5%D0%BB%D0%B5%22,_%D0%B3._%D0%9F%D0%B5%D1%82%D1%80%D0%BE%D0%B7%D0%B0%D0%B2%D0%BE%D0%B4%D1%81%D0%BA,_%D0%BF%D1%80-%D0%BA%D1%82_%D0%9A%D0%B0%D1%80%D0%BB%D0%B0_%D0%9C%D0%B0%D1%80%D0%BA%D1%81%D0%B0,_%D0%B4.6.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/87/%D0%90%D0%BD%D1%81%D0%B0%D0%BC%D0%B1%D0%BB%D1%8C_%22%D0%9A%D0%B0%D0%BD%D1%82%D0%B5%D0%BB%D0%B5%22%2C_%D0%B3._%D0%9F%D0%B5%D1%82%D1%80%D0%BE%D0%B7%D0%B0%D0%B2%D0%BE%D0%B4%D1%81%D0%BA%2C_%D0%BF%D1%80-%D0%BA%D1%82_%D0%9A%D0%B0%D1%80%D0%BB%D0%B0_%D0%9C%D0%B0%D1%80%D0%BA%D1%81%D0%B0%2C_%D0%B4.6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/%D0%90%D0%BD%D1%81%D0%B0%D0%BC%D0%B1%D0%BB%D1%8C_%22%D0%9A%D0%B0%D0%BD%D1%82%D0%B5%D0%BB%D0%B5%22%2C_%D0%B3._%D0%9F%D0%B5%D1%82%D1%80%D0%BE%D0%B7%D0%B0%D0%B2%D0%BE%D0%B4%D1%81%D0%BA%2C_%D0%BF%D1%80-%D0%BA%D1%82_%D0%9A%D0%B0%D1%80%D0%BB%D0%B0_%D0%9C%D0%B0%D1%80%D0%BA%D1%81%D0%B0%2C_%D0%B4.6.jpg/1280px-%D0%90%D0%BD%D1%81%D0%B0%D0%BC%D0%B1%D0%BB%D1%8C_%22%D0%9A%D0%B0%D0%BD%D1%82%D0%B5%D0%BB%D0%B5%22%2C_%D0%B3._%D0%9F%D0%B5%D1%82%D1%80%D0%BE%D0%B7%D0%B0%D0%B2%D0%BE%D0%B4%D1%81%D0%BA%2C_%D0%BF%D1%80-%D0%BA%D1%82_%D0%9A%D0%B0%D1%80%D0%BB%D0%B0_%D0%9C%D0%B0%D1%80%D0%BA%D1%81%D0%B0%2C_%D0%B4.6.jpg",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "author": "Ансамбль \"Кантеле\"",
+    "attribution_required": false,
+    "width": 1280,
+    "height": 1708,
+    "sha256": "3b2c12d2de5838149dfbdf354e9934fcda7088037eec994a9278555858006f06",
+    "checked": "2026-10-29",
+    "region": "russia",
+    "original_folder": "Фото туристские маршруты",
+    "game_variants": {
+      "thumb": {
+        "file": "images/thumb/412.webp",
+        "bytes": 15434,
+        "sha256": "eb28ed8433f28f2186686113bb0780804880946002744c5e081381874a7e268d"
+      },
+      "play": {
+        "file": "images/play/412.webp",
+        "bytes": 76888,
+        "sha256": "c1eae0b74cc316ffae99f510f5bba443deb2fb218d6665ce010237232b8236e9"
+      },
+      "large": {
+        "file": "images/large/412.webp",
+        "bytes": 235426,
+        "sha256": "a98f63d20bc17cac9b7d835ccaab37269bc8f0cee45296851e0b75ca962fa99e"
+      }
+    },
+    "game_file": "images/play/412.webp",
+    "game_sha256": "c1eae0b74cc316ffae99f510f5bba443deb2fb218d6665ce010237232b8236e9"
+  },
+  {
+    "id": "413",
+    "file": "413.jpg",
+    "name": "Бывшая женская гимназия Сортавалы",
+    "location": "Сортавала",
+    "source": "https://commons.wikimedia.org/wiki/File:Sortavala_-_Gimnazia.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Sortavala_-_Gimnazia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Sortavala_-_Gimnazia.jpg",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "author": "Vil",
+    "attribution_required": false,
+    "width": 900,
+    "height": 585,
+    "sha256": "c8e53ce4b36c66a1f15d86a0cd45dd7fb1a789f6ae0958bc34a909ae1c16b509",
+    "checked": "2026-10-29",
+    "region": "russia",
+    "original_folder": "Фото туристские маршруты",
+    "game_variants": {
+      "thumb": {
+        "file": "images/thumb/413.webp",
+        "bytes": 21170,
+        "sha256": "09343f91323eb90007f4c6793b82d93035bec14df586c4a3b333de6b0ef23e28"
+      },
+      "play": {
+        "file": "images/play/413.webp",
+        "bytes": 131528,
+        "sha256": "d19b6800be50ced8666cd93626dd4c131cb2355a8902fa5c41c4fd0eab1bc213"
+      },
+      "large": {
+        "file": "images/large/413.webp",
+        "bytes": 166488,
+        "sha256": "e9a556dacd6ae7d28b7357408a47875a687c84ed90d5fba5282686d1fd4df47f"
+      }
+    },
+    "game_file": "images/play/413.webp",
+    "game_sha256": "d19b6800be50ced8666cd93626dd4c131cb2355a8902fa5c41c4fd0eab1bc213"
+  },
+  {
+    "id": "414",
+    "file": "414.jpg",
+    "name": "Набережная Сортавалы",
+    "location": "Сортавала",
+    "source": "https://commons.wikimedia.org/wiki/File:Sortavala_harbour.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Sortavala_harbour.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Sortavala_harbour.jpg",
+    "license": "Public domain — PD-self",
+    "license_url": "https://commons.wikimedia.org/wiki/Template:PD-self",
+    "author": "Saariston Sirkka",
+    "attribution_required": false,
+    "width": 1000,
+    "height": 750,
+    "sha256": "815b234d562e2aa45b76f7d017bbe7cc9cf1581b1076b18fde1a63023b7ec6a4",
+    "checked": "2026-10-29",
+    "region": "russia",
+    "original_folder": "Фото туристские маршруты",
+    "game_variants": {
+      "thumb": {
+        "file": "images/thumb/414.webp",
+        "bytes": 13384,
+        "sha256": "50b34ba095e30adaaff2456845a1b90a87523d07d6b2306d5bba625fbfeb0c74"
+      },
+      "play": {
+        "file": "images/play/414.webp",
+        "bytes": 70616,
+        "sha256": "3c515136c727e49519c6587b57d5d4eb3f4891ba233368d7e2da61d4b884f9b7"
+      },
+      "large": {
+        "file": "images/large/414.webp",
+        "bytes": 89834,
+        "sha256": "c1d8a437d20ce9acc3f165356a31e284008053fb61a0738090a14d40f17118c6"
+      }
+    },
+    "game_file": "images/play/414.webp",
+    "game_sha256": "3c515136c727e49519c6587b57d5d4eb3f4891ba233368d7e2da61d4b884f9b7"
+  },
+  {
+    "id": "415",
+    "file": "415.jpg",
+    "name": "Часовая башня Выборга",
+    "location": "Выборг",
+    "source": "https://commons.wikimedia.org/wiki/File:Vyborg_-_Clock_tower_-_2026-08.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/df/Vyborg_-_Clock_tower_-_2026-08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Vyborg_-_Clock_tower_-_2026-08.jpg/1280px-Vyborg_-_Clock_tower_-_2026-08.jpg",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "author": "Александр Сигачёв",
+    "attribution_required": false,
+    "width": 1280,
+    "height": 1700,
+    "sha256": "da3f339e3659ef67d81a5faccfab2eb12ee62d8e55d7c78208a020d900b5e9bd",
+    "checked": "2026-10-29",
+    "region": "russia",
+    "original_folder": "Фото туристские маршруты",
+    "game_variants": {
+      "thumb": {
+        "file": "images/thumb/415.webp",
+        "bytes": 26404,
+        "sha256": "6cbcbf76af242ef18e0895e0ab22130becdbe6961c4afd8e171ee698fe75fba3"
+      },
+      "play": {
+        "file": "images/play/415.webp",
+        "bytes": 187408,
+        "sha256": "193c01abd9d5937e9a7f66f4a41a068e1757869006413479231113bccf3ebcc7"
+      },
+      "large": {
+        "file": "images/large/415.webp",
+        "bytes": 576638,
+        "sha256": "7cd984bc30278a9fa92d9faa9e89c9b13c89c2af34ecd4ada63a9fb6d3b20e4c"
+      }
+    },
+    "game_file": "images/play/415.webp",
+    "game_sha256": "193c01abd9d5937e9a7f66f4a41a068e1757869006413479231113bccf3ebcc7"
+  },
+  {
+    "id": "416",
+    "file": "416.jpg",
+    "name": "Старая ратуша Выборга",
+    "location": "Выборг",
+    "source": "https://commons.wikimedia.org/wiki/File:Vyborg_-_Old_Town_Hall_-_2026-08.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Vyborg_-_Old_Town_Hall_-_2026-08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Vyborg_-_Old_Town_Hall_-_2026-08.jpg/1280px-Vyborg_-_Old_Town_Hall_-_2026-08.jpg",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "author": "Александр Сигачёв",
+    "attribution_required": false,
+    "width": 1280,
+    "height": 1128,
+    "sha256": "540cada750579d6d464eadf157d9eaf0ea9fbcbd994dbae5b11678701cb4ad0e",
+    "checked": "2026-10-29",
+    "region": "russia",
+    "original_folder": "Фото туристские маршруты",
+    "game_variants": {
+      "thumb": {
+        "file": "images/thumb/416.webp",
+        "bytes": 41752,
+        "sha256": "5d80c02cc0d130c724b789e6de97f3792329082494a8e0a003e32bbf16037c03"
+      },
+      "play": {
+        "file": "images/play/416.webp",
+        "bytes": 272048,
+        "sha256": "eede3d4e3f6261074c02bc68d73af3ac229e595155607934e4ba6c6a499ae3e3"
+      },
+      "large": {
+        "file": "images/large/416.webp",
+        "bytes": 524286,
+        "sha256": "0fe0229b53911b2f379c53396a7f5402859205051a851b57deaaf51639ff8506"
+      }
+    },
+    "game_file": "images/play/416.webp",
+    "game_sha256": "eede3d4e3f6261074c02bc68d73af3ac229e595155607934e4ba6c6a499ae3e3"
+  },
+  {
+    "id": "417",
+    "file": "417.jpg",
+    "name": "Круглая башня Выборга",
+    "location": "Выборг",
+    "source": "https://commons.wikimedia.org/wiki/File:Vyborg_Round_Tower.JPG",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Vyborg_Round_Tower.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Vyborg_Round_Tower.JPG/1280px-Vyborg_Round_Tower.JPG",
+    "license": "Public domain — PD-self",
+    "license_url": "https://commons.wikimedia.org/wiki/Template:PD-self",
+    "author": "No machine-readable author provided. Juho ahava assumed (based on copyright claims).",
+    "attribution_required": false,
+    "width": 1280,
+    "height": 1707,
+    "sha256": "cb76e12b2f2b8fb35c31687af6a06ca9f4be77f56439e2af05d86cca35bd415c",
+    "checked": "2026-10-29",
+    "region": "russia",
+    "original_folder": "Фото туристские маршруты",
+    "game_variants": {
+      "thumb": {
+        "file": "images/thumb/417.webp",
+        "bytes": 7932,
+        "sha256": "6445b2bffceaf898b9ddc7b13a1eaf89f936109ba2eb73affa03d9eb4781f65e"
+      },
+      "play": {
+        "file": "images/play/417.webp",
+        "bytes": 59532,
+        "sha256": "488898736be591da40a7310b380200069306491e02c804a4e8e02ddcc3d74dd3"
+      },
+      "large": {
+        "file": "images/large/417.webp",
+        "bytes": 193666,
+        "sha256": "708fcf41252f0689fb3d73fd6e6018846664c79369da993558d641880aeab49c"
+      }
+    },
+    "game_file": "images/play/417.webp",
+    "game_sha256": "488898736be591da40a7310b380200069306491e02c804a4e8e02ddcc3d74dd3"
+  },
+  {
+    "id": "418",
+    "file": "418.jpg",
+    "name": "Торговые ряды Суздаля",
+    "location": "Суздаль",
+    "source": "https://commons.wikimedia.org/wiki/File:Suzdal_trade_rows_-_2026-05_-_p01.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Suzdal_trade_rows_-_2026-05_-_p01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Suzdal_trade_rows_-_2026-05_-_p01.jpg/1280px-Suzdal_trade_rows_-_2026-05_-_p01.jpg",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "author": "Александр Сигачёв",
+    "attribution_required": false,
+    "width": 1280,
+    "height": 853,
+    "sha256": "a80cf01272d7015851efd47aa7a46164b26803c4a2db92d5841ca83944819aa7",
+    "checked": "2026-10-29",
+    "region": "russia",
+    "original_folder": "Фото туристские маршруты",
+    "game_variants": {
+      "thumb": {
+        "file": "images/thumb/418.webp",
+        "bytes": 11658,
+        "sha256": "354b58a82455dcd41a2983f4e89706f4da1d7748431a338f8e0f9c37184ae13c"
+      },
+      "play": {
+        "file": "images/play/418.webp",
+        "bytes": 90612,
+        "sha256": "21b15f3053227efbaffc711dfe25167830fc70b2c8e0186ece74a3548c830e98"
+      },
+      "large": {
+        "file": "images/large/418.webp",
+        "bytes": 194798,
+        "sha256": "fc05e37240c8fb8ddc92c42b1d8c6bb3534d3fd017be7f12c0ef240928e14038"
+      }
+    },
+    "game_file": "images/play/418.webp",
+    "game_sha256": "21b15f3053227efbaffc711dfe25167830fc70b2c8e0186ece74a3548c830e98"
   }
 ]
